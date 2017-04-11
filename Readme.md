@@ -1,6 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Владимир Пленкин](https://up.htmlacademy.ru/htmlcss/17/user/369201).
+* Студент: [Владимир Bobpl Пленкин](https://up.htmlacademy.ru/htmlcss/17/user/369201).
+* Наставник: [Юрий Зайцев](https://htmlacademy.ru/profile/id89805).
 
 ---
 
