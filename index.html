@@ -15,6 +15,8 @@
         <a href="#">фото и видео</a>
       </li>
       <li>
+        <a class="logo" href="#"><img src="logo.png" alt="Лого"></a>
+      <li>
         <a href="#">карта штата</a>
       </li>
       <li>
@@ -24,9 +26,20 @@
   </nav>
 </header>
 <main>
-  <div>
-    <img src="index.png" alt="седона">
-  </div>
+<div class="intro">
+          <div class="intro_background">
+            <img src="intro_background.jpg">
+          </div>
+          <div class="intro-text welcome">
+            <img src="img/intro-welcome.png" alt="Welcome to the gorgeous"/>
+          </div>
+          <div class="intro-text sedona">
+            <img src="img/intro-sedona.png" alt="Sedona"/>
+          </div>
+          <div class="intro-text slogan">
+            <img src="img/intro-slogan.png" alt="Because the Grand Canyon sucks!"/>
+          </div>
+       </div>
   <h1>седона - небольшой городок в аризоне, заслуживающий большего!
   </h1>
   <span>рассмотрим 5 причин, по которым седона круче ,чем гранд каньон!
@@ -34,7 +47,7 @@
   <div>
     <h2>настоящий городок</h2>
   </div>
-  <div> <img src="1.png" alt="№1"> </div>
+<div class="single-promo1number">&ndash;№1&ndash;</div>
   <div>
 СЕДОНА — НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ
   </div>
@@ -61,7 +74,7 @@
   </div>
   <h2>там есть мост дьявола</h2>
 </div>
-<div> <img src="2.png" alt="№2"> </div>
+<div class="single-promo2number">&ndash;№2&ndash;</div>
 <div>
 Да, по нему можно пройти! Если конечно вы осмелитесь
 </div>
@@ -71,19 +84,19 @@
 <section>
   <div>
     <b>небольшая площадь</b>
-    <div> <img src="3.png" alt="№3"> </div>
+    <div class="single-promo3number">&ndash;№3&ndash;</div>
     <p>все достопримеча-
 тельности находятся очень близко</p>
   </div>
   <div>
     <b>красивая доорга</b>
-    <div> <img src="4.png" alt="№4"> </div>
+    <div class="single-promo4number">&ndash;№4&ndash;</div>
     <p>ехать в седону из лас-вегаса совсем не скучно
     </p>
   </div>
   <div>
     <b>мало туристов</b>
-    <div> <img src="5.png" alt="№5"> </div>
+    <div class="single-promo5number">&ndash;№5&ndash;</div>
     <p>Большинство едет в гранд каньон и толпится там</p>
   </div>
 </section>
@@ -91,29 +104,53 @@
 <span>Укажите предполагаемые даты поездки,
 и мы покажем вам лучшие предложения гостиниц в седоне
 </span>
+<form method="post" action="#">
+            <div class="form-layout-row clearfix">
+              <label for="date-in" class="to-left" >Дата заезда:</label>
+              <input id="date-in" class="date-in to-right" type="text" placeholder="24 апреля 2017"/>
+            </div>
+            <div class="form-layout-row dates clearfix">
+              <label for="date-out" class="to-left">Дата выезда:</label>
+              <input id="date-out" class="date-out to-right" type="text" placeholder="4 июля 2017"/>
+            </div>
+            <div class="form-layout-row clearfix">
+              <div class="form-layout-row-half to-left clearfix">
+                <label for="count-adults" class="to-left">Взрослые:</label>
+                <div class="form-layout-row-half-btns to-right">
+                  <input class="btn-minus" type="button" value="-">
+                  <input id="count-adults" type="text" placeholder="2">
+                  <input class="btn-plus" type="button" value="+">
+                </div>
+              </div>
+              <div class="form-layout-row-half to-right clearfix">
+                <label for="count-children" class="count-children to-left">Дети:</label>
+                <div class="form-layout-row-half-btns to-right">
+                  <input class="btn-minus" type="button" value="-">
+                  <input id="count-children" type="text" placeholder="0">
+                  <input class="btn-plus" type="button" value="+">
+                </div>
+              </div>
+            </div>
+            <input class="btn-search blue-btn" type="submit" value="Найти">
+          </form>
 <div>
-  <img src="map.png">
+  <img src="map.png" alt="Карта">
 </div>
-<div>
-  <h2>поиск гостиницы в седоне</h2>
-  <form action="https://echo.htmlacademy.ru" method="post">
-    <input type="text" name="date" value="" placeholder="Дата заезда">
-    <input type="text" name="date" value="" placeholder="Дата выезда">
-    <input type="text" name="adult" value="" placeholder="Взрослые">
-    <input type="text" name="child" value="" placeholder="Дети">
-    <button class="btn" type="submit">найти</button>
-  </form>
 
-
-<footer>
-<span>#visitsedona</span>
+  <footer>
+<section class="main-footer__hashtag"> <span>#visitsedona</span>
+</section>
+<section class="main-footer__social-links">
      <div>
        <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
        <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
        <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
      </div>
-     <div>
+</section>
+<section class="main-footer__copyright">
+
        <img src="htmlacademy.png">
+</section>
    </footer>
 
 

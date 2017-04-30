@@ -1,0 +1,13 @@
+body {
+width; 768px;
+height; 2768px;
+}
+.main_header {
+width; 768px;
+height; 56px;
+	font-size: 14px;
+	color:#000000
+	font-family: "PT sans"
+	font-weight: bold
+background-color: red;
+}
