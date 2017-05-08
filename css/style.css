@@ -1,24 +1,65 @@
 
 body {
-width; 1200px;
+width: 1200px;
 margin: 0 auto;
 font-family: PT Sans, Arial, sans-serif;
+}
+.main_header ul {
+  font-size: 20px;
+  font-family: "PT Sans";
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+list-style: none;
+display: flex;
+flex-direction: row;
+justify-content:space-between;
+margin:0;
+margin-top: 20px;
+
 
 }
-.main_header {
-width: 56px;
-text-decoration: none;
+.main_header a {
+  text-decoration: none;
 
-display: inline-block;
-
-
-}
 }
 .logo {
-  width:70px;
-  margin:0 auto;
+    margin:0 auto;
   display:flex;
   flex-direction:row;
   justify-content: center;
+  position:relative;
+  top:-40px;
+  z-index: 1;
 
+}
+.intro {
+position: absolute;
+top:57px;
+}
+.intro_bottom_background {
+  position: absolute;
+  top: 564px;
+  left: 0px;
+
+}
+.intro_text_welcome {
+  position: absolute;
+  top:132px;
+  left:508px;
+}
+.intro_text_sedona {
+  position: absolute;
+  left:370px;
+  top:270px;
+}
+.intro_text_slogan {
+  position: absolute;
+  left: 450px;
+  top: 404px;
+
+}
+.text_slogan {
+  background: white;
+  margin: 0 auto;
 }
