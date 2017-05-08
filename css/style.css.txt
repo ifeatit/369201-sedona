@@ -28,22 +28,8 @@ height; 56px;
   line-height: 1.857;
   text-align: center;
   position: absolute;
-
+display: inline-block;
 }
-
-
-}
-.intro {
-width;768px;
-height;570px;
-}
-.container {
-width;768px;
-height;2070px;
-
-}
-.footer {
-width;768px;
-height;120px;
-
+.main_navigator {
+display: block;
 }
