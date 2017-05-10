@@ -4,44 +4,50 @@ width: 1200px;
 margin: 0 auto;
 font-family: PT Sans, Arial, sans-serif;
 }
-.main_header ul {
-  font-size: 20px;
-  font-family: "PT Sans";
-  color: black;
-  font-weight: bold;
-  text-transform: uppercase;
-list-style: none;
-display: flex;
-flex-direction: row;
-justify-content:space-between;
-margin:0;
-margin-top: 20px;
-
-
+.main_header{
+  height: 56px;
 }
-.main_header a {
+.main_nav ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+}
+.main_nav a{
+  text-align: center;
   text-decoration: none;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight:bold;
+  text-transform: uppercase;
 
 }
-.logo {
-    margin:0 auto;
-  display:flex;
-  flex-direction:row;
-  justify-content: center;
-  position:relative;
-  top:-40px;
-  z-index: 1;
-
+.main_nav li {
+  width: 20%;
+  text-align: center;
 }
-.intro {
-position: absolute;
-top:57px;
+.main_nav li:nth-child(2) {
+  text-align: left;
+  margin-right: 23px;
 }
-.intro_bottom_background {
+.main_nav li:nth-child(3) {
+  text-align: right;
+}
+.logo{
   position: absolute;
-  top: 564px;
-  left: 0px;
-
+  top:0;
+  left:900px;
+z-index: 1;
+}
+.intro{
+  background-image: url(img/background.jpg);
+  position: relative;
+  top:-15px;
+}
+.intro_bottom_background{
+  position: absolute;
+  bottom: 0;
+  top:563px;
 }
 .intro_text_welcome {
   position: absolute;
@@ -57,9 +63,30 @@ top:57px;
   position: absolute;
   left: 450px;
   top: 404px;
-
 }
-.text_slogan {
-  background: white;
-  margin: 0 auto;
+.text_slogan{
+  font-size: 21px;
+  font-family: "PT Sans";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.causes{
+
+    font-size: 14px;
+    font-family: "PT Sans";
+    color: rgb(51, 51, 51);
+    text-transform: uppercase;
+    text-align: center;
+  }
+.real_town{
+
+  font-size: 21px;
+  font-family: "PT Sans";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+
 }
