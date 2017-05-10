@@ -1,92 +1,146 @@
+body
+{
+    font-family: 'PT Sans', Arial, Sans-serif;
 
-body {
-width: 1200px;
-margin: 0 auto;
-font-family: PT Sans, Arial, sans-serif;
+    width: 1200px;
+    margin: 0 auto;
 }
-.main_header{
-  height: 56px;
+.main_header
+{
+    height: 56px;
 }
-.main_nav ul{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  list-style: none;
-}
-.main_nav a{
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-  line-height: 26px;
-  font-weight:bold;
-  text-transform: uppercase;
+.main_nav ul
+{
+    display: flex;
+    flex-direction: row;
 
-}
-.main_nav li {
-  width: 20%;
-  text-align: center;
-}
-.main_nav li:nth-child(2) {
-  text-align: left;
-  margin-right: 23px;
-}
-.main_nav li:nth-child(3) {
-  text-align: right;
-}
-.logo{
-  position: absolute;
-  top:0;
-  left:900px;
-z-index: 1;
-}
-.intro{
-  background-image: url(img/background.jpg);
-  position: relative;
-  top:-15px;
-}
-.intro_bottom_background{
-  position: absolute;
-  bottom: 0;
-  top:563px;
-}
-.intro_text_welcome {
-  position: absolute;
-  top:132px;
-  left:508px;
-}
-.intro_text_sedona {
-  position: absolute;
-  left:370px;
-  top:270px;
-}
-.intro_text_slogan {
-  position: absolute;
-  left: 450px;
-  top: 404px;
-}
-.text_slogan{
-  font-size: 21px;
-  font-family: "PT Sans";
-  color: rgb(0, 0, 0);
-  font-weight: bold;
-  text-transform: uppercase;
-  text-align: center;
-}
+    margin: 0;
+    padding: 0;
+    /*убраны оступы по-умолчанию*/
 
-.causes{
+    list-style: none;
 
+    justify-content: space-between;
+}
+.main_nav a
+{
     font-size: 14px;
-    font-family: "PT Sans";
-    color: rgb(51, 51, 51);
+    font-weight: 700;
+    line-height: 26px;
+
+    text-decoration: none;
     text-transform: uppercase;
+
+    color: #000;
+}
+.main_nav li
+{
+    width: 20%;
+    padding: 14px 0 17px 0;
+    /*добавлены вертикальные отступы*/
+}
+.main_nav li:nth-child(1) > a
+{
+    margin-left: 70px;
+}
+.main_nav li:nth-child(4) > a
+{
+    margin-right: 70px;
+}
+.main_nav li:nth-child(1),
+.main_nav li:nth-child(2)
+{
+    text-align: left;
+}
+.main_nav li:nth-child(3),
+.main_nav li:nth-child(4)
+{
+    text-align: right;
+}
+.logo
+{
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    /* центровка блока по-горизонтали*/
+    left: 50%;
+
+    transform: translateX(-50%);
+}
+
+
+.intro
+{
+    position: relative;
+
+    height: 430px;
+    padding-top: 77px;
+
+    background-image: url(../img/background.jpg);
+    background-position: 50% 21%;
+    /* позиционирование фона в соответсвии с макетом*/
+    background-size: cover;
+}
+
+.intro:after
+{
+    position: absolute;
+    bottom: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 57px;
+
+    content: '';
+
+    background-image: url(../img/bottom_background.png);
+    background-position: 50%;
+}
+
+
+.intro_text_welcome
+{
+    width: 256px;
+    height: 85px;
+    margin: 0 auto;
+    margin-bottom: 53px;
+
     text-align: center;
-  }
-.real_town{
+}
+.intro_text_sedona
+{
+    width: 458px;
+    height: 78px;
+    margin: 0 auto;
+    margin-bottom: 56px;
+}
+.intro_text_slogan
+{
+    width: 296px;
+    height: 80px;
+    margin: 0 auto;
+}
 
-  font-size: 21px;
-  font-family: "PT Sans";
-  color: rgb(255, 255, 255);
-  font-weight: bold;
-  text-transform: uppercase;
 
+
+.causes
+{
+    font-family: 'PT Sans';
+    font-size: 14px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: rgb(51, 51, 51);
+}
+.real_town
+{
+    font-family: 'PT Sans';
+    font-size: 21px;
+    font-weight: bold;
+
+    text-transform: uppercase;
+
+    color: rgb(255, 255, 255);
 }
