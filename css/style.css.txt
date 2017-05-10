@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>HTML Academy: Седона</title>
+<link href="css/style.css" rel="stylesheet">
+<head>
+<meta charset="utf-8">
+<title>HTML Academy: Седона</title>
+<link rel="stylesheet" href="css/normalize.css">
+<link href="css/style.css" rel="stylesheet">
+</head>
+</head>
+body {
+width; 768px;
+height; 2768px;
+font-size: 14px;
+background-color: red;
+}
+.main_header {
+width; 768px;
+height; 56px;
+  font-size: 14px;
+  font-family: "PT Sans";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.857;
+  text-align: center;
+  position: absolute;
+display: inline-block;
+}
+.main_navigator {
+display: block;
+}
